@@ -1,0 +1,35 @@
+.youtube-list {
+  gap: 20px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .youtube-list {
+    gap: 5%;
+    padding: 0;
+    flex-direction: row;
+  }
+}
+
+.youtube-list-item {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .youtube-list-item {
+    width: 45%;
+  }
+}
+
+.youtube-list-item-video {
+  aspect-ratio: 16/9;
+}
+
+.map {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .map {
+    aspect-ratio: 16/9;
+  }
+}
