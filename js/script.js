@@ -16,3 +16,52 @@ window.onclick = (event) => {
     closeModal();
   }
 };
+
+const openModalFromDataKey = (key) => {
+  const data = travelData[key]; // キーでデータを取得
+  if (data) {
+    openModal(data.title, data.year, data.description, data.img);
+  } else {
+    console.error("データが見つかりません:", key);
+  }
+};
+
+const travelData = {
+  philippin: {
+    title: "フィリピン",
+    year: "2018",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ...",
+    img: "./img/philippin.jpg",
+  },
+  malay: {
+    title: "マレーシア",
+    year: "2019",
+    description: "ああああああああああああ...",
+    img: "./img/Malay.jpg",
+  },
+  thailand: {
+    title: "タイ",
+    year: "2019",
+    description: "ああああああああああああ...",
+    img: "../img/thailand.jpg",
+  },
+
+  aus: {
+    title: "オーストラリア",
+    year: "2020",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ...",
+    img: "../img/Australia.jpg",
+  },
+  lasvegus: {
+    title: "ラスベガス",
+    year: "2024",
+    description: "ああああああああああああ...",
+    img: "../img/lasvegus.jpg",
+  },
+  newyork: {
+    title: "ニューヨーク",
+    year: "2024",
+    description: "ああああああああああああ...",
+    img: "../img/selfy.jpeg",
+  },
+};
