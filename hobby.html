@@ -37,7 +37,7 @@
         <li class="travel-list-item">
           <a
             class="travel-list-btn"
-            onclick="openModal('フィリピン', '2018', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque est omnis eaque, ea repellendus esse eos fugiat dignissimos sunt sint ratione. Doloremque, eveniet voluptatem consequuntur sapiente corporis praesentium corrupti!', './img/philippin.jpg')"
+            onclick="openModalFromDataKey('philippin')"
           >
             <img
               class="travel-list-item-img"
@@ -47,10 +47,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModal('マレーシア', '2019', 'Lorem ipsum dolor sit amet consectetur.', './img/Malay.jpg')"
-          >
+          <a class="travel-list-btn" onclick="openModalFromDataKey('malay')">
             <img
               class="travel-list-item-img"
               src="./img/Malay.jpg"
@@ -59,10 +56,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModal('タイ', '2019', 'Lorem ipsum dolor sit amet consectetur.', './img/thailand.jpg')"
-          >
+          <a class="travel-list-btn" onclick="openModalFromDataKey('thailand')">
             <img
               class="travel-list-item-img"
               src="./img/thailand.jpg"
@@ -71,10 +65,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModal('オーストラリア', '2012', 'Lorem ipsum dolor sit amet consectetur.', './img/Australia.jpg')"
-          >
+          <a class="travel-list-btn" onclick="openModalFromDataKey('aus')">
             <img
               class="travel-list-item-img"
               src="./img/Australia.jpg"
@@ -83,10 +74,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModal('ラスベガス', '2012', 'Lorem ipsum dolor sit amet consectetur.', './img/lasvegus.jpg')"
-          >
+          <a class="travel-list-btn" onclick="openModalFromDataKey('lasvegus')">
             <img
               class="travel-list-item-img"
               src="./img/lasvegus.jpg"
@@ -95,10 +83,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModal('ニューヨーク', '2012', 'Lorem ipsum dolor sit amet consectetur.', './img/selfy.jpeg')"
-          >
+          <a class="travel-list-btn" onclick="openModalFromDataKey('newyork')">
             <img
               class="travel-list-item-img"
               src="./img/selfy.jpeg"
@@ -117,109 +102,6 @@
           <p id="modal-description"></p>
         </div>
       </div>
-
-      <!-- <ul class="travel-list d-grid">
-        <li class="travel-list-item">
-          <img
-            class="travel-list-item-img"
-            src="./img/philippin.jpg"
-            alt="旅行1"
-          />
-          <div>
-            <p>フィリピン</p>
-            <time>2018</time>
-            <p class="travel-list-item-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium non omnis nihil consectetur temporibus dignissimos cum
-              repudiandae ut dolorem commodi, sed totam exercitationem sapiente
-              nam? Aliquam, quae natus. Tenetur, debitis!
-            </p>
-          </div>
-        </li>
-        <li class="travel-list-item">
-          <img class="travel-list-item-img" src="./img/Malay.jpg" alt="旅行1" />
-          <div>
-            <p>マレーシア</p>
-            <time>2019</time>
-            <p class="travel-list-item-txt">
-              ああああああああああああああああああああ
-              ああああああああああああああああああああああ
-              ああああああああああああああああああああああああ
-              ああああああああああああああああああああああああああ
-              ああああああああああああああああああああああああああああああ
-              あああああああああああああああああああああああああああああああ
-            </p>
-          </div>
-        </li>
-        <li class="travel-list-item">
-          <img
-            class="travel-list-item-img"
-            src="./img/thailand.jpg"
-            alt="旅行1"
-          />
-          <div>
-            <p>タイ</p>
-            <time>2019</time>
-            <p class="travel-list-item-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium non omnis nihil consectetur temporibus dignissimos cum
-              repudiandae ut dolorem commodi, sed totam exercitationem sapiente
-              nam? Aliquam, quae natus. Tenetur, debitis!
-            </p>
-          </div>
-        </li>
-        <li class="travel-list-item">
-          <img
-            class="travel-list-item-img"
-            src="./img/Australia.jpg"
-            alt="旅行1"
-          />
-          <div>
-            <p>オーストラリア</p>
-            <time>2020</time>
-            <p class="travel-list-item-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium non omnis nihil consectetur temporibus dignissimos cum
-              repudiandae ut dolorem commodi, sed totam exercitationem sapiente
-              nam? Aliquam, quae natus. Tenetur, debitis!
-            </p>
-          </div>
-        </li>
-        <li class="travel-list-item">
-          <img
-            class="travel-list-item-img"
-            src="./img/lasvegus.jpg"
-            alt="旅行1"
-          />
-          <div>
-            <p>ラスベガス</p>
-            <time>2023</time>
-            <p class="travel-list-item-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium non omnis nihil consectetur temporibus dignissimos cum
-              repudiandae ut dolorem commodi, sed totam exercitationem sapiente
-              nam? Aliquam, quae natus. Tenetur, debitis!
-            </p>
-          </div>
-        </li>
-        <li class="travel-list-item">
-          <img
-            class="travel-list-item-img"
-            src="./img/selfy.jpeg"
-            alt="旅行1"
-          />
-          <div>
-            <p>ニューヨーク</p>
-            <time>2023</time>
-            <p class="travel-list-item-txt">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium non omnis nihil consectetur temporibus dignissimos cum
-              repudiandae ut dolorem commodi, sed totam exercitationem sapiente
-              nam? Aliquam, quae natus. Tenetur, debitis!
-            </p>
-          </div>
-        </li>
-      </ul> -->
     </main>
     <footer>
       <p class="text-center m-0">&copy;copyright</p>
