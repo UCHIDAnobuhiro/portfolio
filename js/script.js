@@ -26,6 +26,14 @@ const openModalFromDataKey = (key) => {
   }
 };
 
+document.querySelectorAll(".travel-list-btn").forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    const id = event.currentTarget.closest(".travel-list-btn").dataset.id;
+    console.log("選択されたID", id);
+    openModalFromDataKey(id);
+  });
+});
+
 const travelData = {
   philippin: {
     title: "フィリピン",
