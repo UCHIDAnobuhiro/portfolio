@@ -90,10 +90,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModalFromDataKey('philippin')"
-          >
+          <a class="travel-list-btn" data-id="philippin">
             <img
               class="travel-list-item-img"
               src="./img/philippin.jpg"
@@ -102,7 +99,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('malay')">
+          <a class="travel-list-btn" data-id="malay">
             <img
               class="travel-list-item-img"
               src="./img/Malay.jpg"
@@ -111,7 +108,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('thailand')">
+          <a class="travel-list-btn" data-id="thailand">
             <img
               class="travel-list-item-img"
               src="./img/thailand.jpg"
@@ -120,7 +117,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('aus')">
+          <a class="travel-list-btn" data-id="aus">
             <img
               class="travel-list-item-img"
               src="./img/Australia.jpg"
@@ -129,7 +126,7 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('lasvegus')">
+          <a class="travel-list-btn" data-id="lasvegus">
             <img
               class="travel-list-item-img"
               src="./img/lasvegus.jpg"
@@ -138,59 +135,11 @@
           </a>
         </li>
         <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('newyork')">
+          <a class="travel-list-btn" data-id="newyork">
             <img
               class="travel-list-item-img"
               src="./img/selfy.jpeg"
               alt="ニューヨーク"
-            />
-          </a>
-        </li>
-        <li class="travel-list-item">
-          <a
-            class="travel-list-btn"
-            onclick="openModalFromDataKey('philippin')"
-          >
-            <img
-              class="travel-list-item-img"
-              src="./img/philippin.jpg"
-              alt="フィリピン"
-            />
-          </a>
-        </li>
-        <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('malay')">
-            <img
-              class="travel-list-item-img"
-              src="./img/Malay.jpg"
-              alt="マレーシア"
-            />
-          </a>
-        </li>
-        <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('thailand')">
-            <img
-              class="travel-list-item-img"
-              src="./img/thailand.jpg"
-              alt="タイ"
-            />
-          </a>
-        </li>
-        <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('aus')">
-            <img
-              class="travel-list-item-img"
-              src="./img/Australia.jpg"
-              alt="オーストラリア"
-            />
-          </a>
-        </li>
-        <li class="travel-list-item">
-          <a class="travel-list-btn" onclick="openModalFromDataKey('lasvegus')">
-            <img
-              class="travel-list-item-img"
-              src="./img/lasvegus.jpg"
-              alt="ラスベガス"
             />
           </a>
         </li>
@@ -199,9 +148,11 @@
         <div class="modal-content">
           <span class="close-btn" onclick="closeModal()">&times;</span>
           <img id="modal-img" class="modal-img" src="" alt="" />
-          <h2 id="modal-title" class="modal-title"></h2>
-          <time id="modal-year" class="modal-year"></time>
-          <p id="modal-description"></p>
+          <div class="modal-sentence d-flex flex-column">
+            <h2 id="modal-title" class="modal-title"></h2>
+            <time id="modal-year" class="modal-year"></time>
+            <p id="modal-description" class="modal-description"></p>
+          </div>
         </div>
       </div>
     </main>
