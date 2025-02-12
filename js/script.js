@@ -11,6 +11,12 @@ const closeModal = () => {
   document.getElementById("modal").style.display = "none";
 };
 
+document
+  .getElementsByClassName("close-btn")[0]
+  .addEventListener("click", () => {
+    closeModal();
+  });
+
 window.onclick = (event) => {
   if (event.target === document.getElementById("modal")) {
     closeModal();
